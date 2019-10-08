@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.example.awsservicetrail1.AwsServiceTrail1ApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.612 s - in com.example.awsservicetrail1.AwsServiceTrail1ApplicationTests

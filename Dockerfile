@@ -1,8 +1,7 @@
 #Sets the Base Image for subsequent instructions.
 FROM openjdk:8-jdk-alpine
 
-RUN groupadd -g 999 appuser && \
-    useradd -r -u 999 -g appuser appuser
+adduser -u 1001 -G appuser appuser
 USER appuser
 
 LABEL Author=RihamFayez

@@ -2,8 +2,7 @@
 FROM openjdk:8-jdk-alpine
 
 RUN addgroup -g 1001 -S appuser && adduser -u 1001 -S appuser -G appuser
-RUN mkdir /opt && chown -R appuser:appuser /opt
-RUN mkdir /logs && chown -R appuser:appuser /logs
+
 USER appuser
 
 LABEL Author=RihamFayez

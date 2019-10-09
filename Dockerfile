@@ -1,5 +1,10 @@
 #Sets the Base Image for subsequent instructions.
 FROM openjdk:8-jdk-alpine
+
+RUN groupadd -g 999 appuser && \
+    useradd -r -u 999 -g appuser appuser
+USER appuser
+
 LABEL Author=RihamFayez
 #creates a mount point for externally mounted volumes or other containers.
 VOLUME /tmp

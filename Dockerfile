@@ -12,3 +12,4 @@ VOLUME /tmp
 COPY target/aws-service-trail1-0.0.1-SNAPSHOT.jar app.jar
 #configures a container that will run as an executable
 ENTRYPOINT ["java","-jar","/app.jar"]
+EXPOSE 8080
